@@ -23,4 +23,21 @@ rect.addEventListener("mouseleave",function(){
         backgroundColor:'white',
     })
 })
-console.log(gsap.utils.mapRange(0,250,255,0,0));
+
+
+const btnId = document.querySelector("button");
+const body = document.body;
+const colorText = document.querySelector("#colorContainat")
+function GenerateColor(){
+    const red = Math.floor(Math.random()*256);
+    const green = Math.floor(Math.random()*256);
+    const blue = Math.floor(Math.random()*256);
+    const result = `rgb(${red},${green},${blue})`
+    return result;
+}
+btnId.addEventListener('click',function(){
+    const ChangeColor = GenerateColor();
+    body.style.backgroundColor=ChangeColor;
+    colorText.textContent=ChangeColor;
+
+})

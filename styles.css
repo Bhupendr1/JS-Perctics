@@ -17,3 +17,34 @@ html,body{
     height: 200px;
     border: 1px solid rgb(0, 0, 0);
 }
+.Parent{
+width: 50%;
+margin:auto;
+margin-top: 2rem;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+gap: 1rem;
+}
+.Child-one{
+    background-color: rgba(22, 20, 20, 0.575);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: large;
+}
+button{
+        text-align: center;
+        border: none;
+        outline: none;
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        font-size: larger;
+        transition: background 0.3s;
+        cursor: pointer;
+}
+button:hover{
+    background: rgb(212, 212, 212);
+}
